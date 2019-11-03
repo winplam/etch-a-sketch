@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: lightyellow;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1 {
+    float: left;
+}
+
+button {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+    margin-right: 10px;
+    padding: 5px 15px;
+    transition-duration: 0.1s;
+}
+
+button:active {
+    transform: translateX(2px) translateY(2px);
+}
+
+button:focus {
+    outline: 0;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 55px 1fr 40px;
+    grid-template-columns: 50px 1fr 50px;
+    height: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.subheader {
+    float: left;
+    height: 100%;
+    padding-top: 11px;
+    width: 50%;
+}
+
+.container {
+    display: grid;
+    background-color: white;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.box {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    transition-duration: 0.2s;
+}
+
+.footer {
+    padding-top: 10px;
+}
+
+#side-left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#side-right {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#colorizeBtn {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    color: white;
+}
+
+#shaderBtn {
+    background-color: lightgray;
+}
