@@ -4,7 +4,7 @@ This is a fun project using JavaScript to make cross between a sketch pad and an
 The grid layout is generated from JavaScript and can be resized to almost any number of rows and columns that will fit on the screen.
 CSS grid layout is used to align the square. By default the squares drawn are green and there is a color randomize that will generate a rainbow of colors.
 
-[Draw in Browser](https://winplam.github.io/etch-a-sketch/)
+### [Draw in Browser](https://winplam.github.io/etch-a-sketch/)
 
 ## Screen shot
 ![Desktop](/screenshots/etch-a-sketch-desktop.png)
